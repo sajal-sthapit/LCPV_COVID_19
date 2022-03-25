@@ -1,0 +1,38 @@
+R version 4.1.2 (2021-11-01)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19043)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252 
+[2] LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] cowplot_1.1.1   waffle_0.7.0    forcats_0.5.1   stringr_1.4.0  
+ [5] dplyr_1.0.7     purrr_0.3.4     readr_2.1.1     tidyr_1.1.4    
+ [9] tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.3.1
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.7         lubridate_1.8.0    assertthat_0.2.1   digest_0.6.29     
+ [5] utf8_1.2.2         R6_2.5.1           cellranger_1.1.0   backports_1.3.0   
+ [9] reprex_2.0.1       evaluate_0.14      httr_1.4.2         pillar_1.6.4      
+[13] rlang_0.4.12       readxl_1.3.1       rstudioapi_0.13    extrafontdb_1.0   
+[17] jquerylib_0.1.4    rmarkdown_2.11     labeling_0.4.2     extrafont_0.17    
+[21] munsell_0.5.0      broom_0.7.10       compiler_4.1.2     modelr_0.1.8      
+[25] xfun_0.28          pkgconfig_2.0.3    htmltools_0.5.2    tidyselect_1.1.1  
+[29] gridExtra_2.3      fansi_0.5.0        crayon_1.4.2       tzdb_0.2.0        
+[33] dbplyr_2.1.1       withr_2.4.3        grid_4.1.2         jsonlite_1.7.2    
+[37] Rttf2pt1_1.3.10    gtable_0.3.0       lifecycle_1.0.1    DBI_1.1.1         
+[41] magrittr_2.0.1     scales_1.1.1       cli_3.1.0          stringi_1.7.6     
+[45] farver_2.1.0       fs_1.5.1           xml2_1.3.3         bslib_0.3.1       
+[49] ellipsis_0.3.2     generics_0.1.1     vctrs_0.3.8        RColorBrewer_1.1-2
+[53] tools_4.1.2        glue_1.5.1         hms_1.1.1          fastmap_1.1.0     
+[57] yaml_2.2.1         colorspace_2.0-2   rvest_1.0.2        knitr_1.36        
+[61] haven_2.4.3        sass_0.4.0        
