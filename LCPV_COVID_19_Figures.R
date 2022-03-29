@@ -52,7 +52,7 @@ d <- plot_grid(nrow = 1, labels = "(d) Change in market", hjust = 0, mkt.acc, mk
 detach()
 plot_grid(nrow = 2, rel_heights = c(1, .4),
           plot_grid(nrow = 4, a, b, c, d),
-          custom_waffle(c(Decrease=1, Same=1, Increase=1), xlab = "", legend_pos = "top")) %>% 
+          custom_waffle(c(Decrease=1, Same=0, Increase=0), xlab = "", legend_pos = "top")) %>% 
   ggsave(plot = ., filename = "Fig_AgSystemsv2.pdf", units = "in", height = 10, width = 12, dpi = 600, device = "pdf")
 
 # Impact on Production ----
@@ -134,14 +134,14 @@ detach()
 fgd$soc$soc.con <- custom_waffle(c(D=0, S=8, I=7), title = "Social conflict")
 fgd$soc$workload <- custom_waffle(c(D=8, S=1, I=6), title = "Women's workload")
 fgd$soc$dv <- custom_waffle(c(D=1, S=14, I=0), title = "Violence against women")
-fgd$soc$alcohol <- custom_waffle(c(D=1, S=7, I=7), title = "Alcoholism")
+fgd$soc$alcohol <- custom_waffle(c(D=1, S=7, I=7), title = "Alcohol consumption")
 fgd$soc$stress <- custom_waffle(c(D=0, S=1, I=14), title = "Mental stress")
-fgd$soc$festivals <- custom_waffle(c(D=0, S=3, I=12), title = "Festivals and celebrations")
+fgd$soc$festivals <- custom_waffle(c(D=3, S=12, I=0), title = "Celebrations and festivities")
 # combine it all ----
 attach(fgd$soc)
 plot_grid(nrow = 2, rel_heights = c(1, .4),
           plot_grid(ncol = 3, labels = "",
-                    alcohol, stress, festivals, soc.con, workload, dv),
+                    soc.con, workload, dv, alcohol, stress, festivals),
           custom_waffle(c(Decrease=1, Same=0, Increase=0), xlab = "", legend_pos = "top")) %>% 
   ggsave(plot = ., filename = "Fig_SocialGender.pdf", units = "in", height = 6, width = 18, dpi = 600, device = "pdf")
 detach()

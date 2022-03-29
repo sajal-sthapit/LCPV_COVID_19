@@ -189,8 +189,9 @@ custom_waffle &lt;-
   waffle(inp, rows = rows, title = title, xlab = xlab, 
          size = size, legend_pos = legend_pos,
          colors = colors, equal = TRUE)
-} # custom plot to apply the same settings consistently
-# Impact on Ag System (v. 2, avail, qual, price groups) ----
+} # custom plot to apply the same settings consistently</code></pre>
+<p>Figure 1. Impact of COVID-19 on the Agricultural Systems in LCPV.</p>
+<pre class="r"><code># Impact on Ag System (v. 2, avail, qual, price groups) ----
 fgd$ag.sys$avail$seed &lt;- custom_waffle(c(D=11, S=3, I=0), xlab = &quot;Seeds and planting materials&quot;)
 fgd$ag.sys$quali$seed &lt;- custom_waffle(c(D=8, S=6, I=0), xlab = &quot;Seeds and planting materials&quot;)
 fgd$ag.sys$price$seed &lt;- custom_waffle(c(D=0, S=6, I=8), xlab = &quot;Seeds and planting materials&quot;)
@@ -232,13 +233,12 @@ detach()
 attach(fgd$ag.sys)
 d &lt;- plot_grid(nrow = 1, labels = &quot;(d) Change in market&quot;, hjust = 0, mkt.acc, mkt.pri, mkt.dem, blank, blank, blank)
 detach()
-plot_grid(nrow = 2, rel_heights = c(1, .4),
+plot_grid(nrow = 2, rel_heights = c(1, .2),
           plot_grid(nrow = 4, a, b, c, d),
-          custom_waffle(c(Decrease=1, Same=1, Increase=1), xlab = &quot;&quot;, legend_pos = &quot;top&quot;)) %&gt;% 
-  ggsave(plot = ., filename = &quot;Fig_AgSystemsv2.pdf&quot;, units = &quot;in&quot;, height = 10, width = 12, dpi = 600, device = &quot;pdf&quot;)
-
-# Impact on Production ----
-fgd$prod$cereal &lt;- custom_waffle(c(D=0, S=2, I=12), title = &quot;Cereal production area&quot;)
+          custom_waffle(c(Decrease=1, Same=0, Increase=0), xlab = &quot;&quot;, legend_pos = &quot;top&quot;)) %&gt;% 
+  ggsave(plot = ., filename = &quot;Fig_AgSystemsv2.pdf&quot;, units = &quot;in&quot;, height = 10, width = 12, dpi = 600, device = &quot;pdf&quot;) # pdf for publication</code></pre>
+<p>Figure 2. Impact of COVID-19 on agricultural production.</p>
+<pre class="r"><code>fgd$prod$cereal &lt;- custom_waffle(c(D=0, S=2, I=12), title = &quot;Cereal production area&quot;)
 fgd$prod$fruit &lt;- custom_waffle(c(D=0, S=12, I=2), title = &quot;Fruit production area&quot;)
 fgd$prod$veg &lt;- custom_waffle(c(D=0, S=0, I=12, pad=2), title = &quot;Vegetable production area&quot;, 
                               colors = c(&quot;#e04c41&quot;, &quot;#8ad468&quot;, &quot;#4e95d4&quot;, &quot;white&quot;))
@@ -253,10 +253,9 @@ plot_grid(nrow = 2, rel_heights = c(1, .4),
           plot_grid(fgd$prod$cereal, fgd$prod$fruit, fgd$prod$veg, fgd$prod$all.crops, 
                     fgd$prod$buff, fgd$prod$goat, fgd$prod$lo.chicken, fgd$prod$br.chicken, ncol = 4),
           custom_waffle(c(Decrease=1, Same=0, Increase=0), xlab = &quot;Legend&quot;, legend_pos = &quot;top&quot;)) %&gt;% 
-  ggsave(plot = ., filename = &quot;Fig_ProductionImpact.pdf&quot;, units = &quot;in&quot;, height = 6, width = 14, dpi = 600, device = &quot;pdf&quot;)
-
-
-# Impact on Forest Ecosystems ----
+  ggsave(plot = ., filename = &quot;Fig_ProductionImpact.pdf&quot;, units = &quot;in&quot;, height = 6, width = 14, dpi = 600, device = &quot;pdf&quot;)</code></pre>
+<p>Figure 3. Impact on forest ecosystems.</p>
+<pre class="r"><code># Impact on Forest Ecosystems ----
 fgd$forest$poach &lt;- custom_waffle(c(D=0, S=11, I=3), title = &quot;Wildlife poaching&quot;)
 fgd$forest$timber &lt;- custom_waffle(c(D=0, S=9, I=5), title = &quot;Illegal firewood/timber harvesting&quot;)
 fgd$forest$hwc &lt;- custom_waffle(c(D=0, S=14, I=0), title = &quot;Human-wildlife conflict&quot;)
@@ -323,7 +322,7 @@ fgd$soc$festivals &lt;- custom_waffle(c(D=0, S=3, I=12), title = &quot;Festivals
 attach(fgd$soc)
 plot_grid(nrow = 2, rel_heights = c(1, .4),
           plot_grid(ncol = 3, labels = &quot;&quot;,
-                    alcohol, stress, festivals, soc.con, workload, dv),
+                    soc.con, workload, dv, alcohol, stress, festivals),
           custom_waffle(c(Decrease=1, Same=0, Increase=0), xlab = &quot;&quot;, legend_pos = &quot;top&quot;)) %&gt;% 
   ggsave(plot = ., filename = &quot;Fig_SocialGender.pdf&quot;, units = &quot;in&quot;, height = 6, width = 18, dpi = 600, device = &quot;pdf&quot;)
 detach()
