@@ -15,10 +15,9 @@ other attached packages:
  [1] cowplot_1.1.1   waffle_0.7.0    forcats_0.5.1   stringr_1.4.0   dplyr_1.0.7     purrr_0.3.4     readr_2.1.1     tidyr_1.1.4     tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.3.1
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.7         lubridate_1.8.0    assertthat_0.2.1   digest_0.6.29      utf8_1.2.2         R6_2.5.1           cellranger_1.1.0   backports_1.3.0    reprex_2.0.1      
-[10] evaluate_0.14      httr_1.4.2         pillar_1.6.4       rlang_0.4.12       readxl_1.3.1       rstudioapi_0.13    extrafontdb_1.0    rmarkdown_2.11     labeling_0.4.2    
-[19] extrafont_0.17     munsell_0.5.0      broom_0.7.10       compiler_4.1.2     modelr_0.1.8       xfun_0.28          pkgconfig_2.0.3    htmltools_0.5.2    tidyselect_1.1.1  
-[28] gridExtra_2.3      fansi_0.5.0        crayon_1.4.2       tzdb_0.2.0         dbplyr_2.1.1       withr_2.4.3        grid_4.1.2         jsonlite_1.7.2     Rttf2pt1_1.3.10   
-[37] gtable_0.3.0       lifecycle_1.0.1    DBI_1.1.1          magrittr_2.0.1     scales_1.1.1       cli_3.1.0          stringi_1.7.6      farver_2.1.0       fs_1.5.1          
-[46] xml2_1.3.3         ellipsis_0.3.2     generics_0.1.1     vctrs_0.3.8        RColorBrewer_1.1-2 tools_4.1.2        glue_1.5.1         hms_1.1.1          fastmap_1.1.0     
-[55] yaml_2.2.1         colorspace_2.0-2   rvest_1.0.2        knitr_1.36         haven_2.4.3       
+ [1] tidyselect_1.1.1   haven_2.4.3        colorspace_2.0-2   vctrs_0.3.8        generics_0.1.1     utf8_1.2.2         rlang_0.4.12       pillar_1.6.4       glue_1.5.1        
+[10] withr_2.4.3        DBI_1.1.1          RColorBrewer_1.1-2 dbplyr_2.1.1       modelr_0.1.8       readxl_1.3.1       lifecycle_1.0.1    munsell_0.5.0      gtable_0.3.0      
+[19] cellranger_1.1.0   rvest_1.0.2        labeling_0.4.2     tzdb_0.2.0         extrafont_0.17     fansi_0.5.0        Rttf2pt1_1.3.10    broom_0.7.10       Rcpp_1.0.7        
+[28] scales_1.1.1       backports_1.3.0    jsonlite_1.7.2     farver_2.1.0       fs_1.5.1           gridExtra_2.3      digest_0.6.29      hms_1.1.1          stringi_1.7.6     
+[37] grid_4.1.2         cli_3.1.0          tools_4.1.2        magrittr_2.0.1     crayon_1.4.2       extrafontdb_1.0    pkgconfig_2.0.3    ellipsis_0.3.2     xml2_1.3.3        
+[46] reprex_2.0.1       lubridate_1.8.0    assertthat_0.2.1   httr_1.4.2         rstudioapi_0.13    R6_2.5.1           compiler_4.1.2    
